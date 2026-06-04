@@ -16,22 +16,6 @@ Users were able to access the platform and begin testing without waiting for ema
 
 ---
 
-## Student Adoption
-
-### Challenge
-
-After creating user accounts, many students did not immediately log in or begin using the platform.
-
-### Solution
-
-Introduced classroom demonstrations, onboarding documentation, and instructor visibility to increase awareness.
-
-### Outcome
-
-Students gained a better understanding of the platform and its purpose.
-
----
-
 ## Knowledge Base Development
 
 ### Challenge
