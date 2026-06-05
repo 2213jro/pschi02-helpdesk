@@ -6,9 +6,10 @@ PSChi02 Help Desk is a student-to-student support platform designed to provide h
 
 ## Infrastructure
 
-### Domain
+### Domains
 
 support.pschi02.com
+support.pschi02.com/scp
 
 ### Cloud Services
 
