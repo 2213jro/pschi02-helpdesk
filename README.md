@@ -27,7 +27,7 @@ The platform allows students to:
 
 The goal of this project is to bridge the gap between classroom learning and real-world IT support experience by providing a safe environment where students can practice skills used in professional help desk environments.
 
-## Live Site
+## Live Sites
 
 - https://support.pschi02.com
 - https://support.pschi02.com/scp
