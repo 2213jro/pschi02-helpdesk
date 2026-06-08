@@ -85,6 +85,53 @@ Limited visibility into server performance and health.
 
 Implemented Prometheus and Grafana monitoring to provide real-time visibility into system resources, service health, uptime, and infrastructure performance.
 
+---
+
+## Discord Notification Integration
+
+### Challenge
+
+Monitoring dashboards provided visibility into system performance, but administrators still needed to actively check the platform to determine whether new support activity had occurred.
+
+A lightweight notification solution was needed to provide immediate awareness of ticket activity without requiring constant dashboard monitoring.
+
+The implementation required integrating Discord webhooks with the server environment, validating webhook communication, and ensuring notifications could be received on both desktop and mobile devices.
+
+### Solution
+
+A dedicated Discord webhook was created and integrated with the osTicket environment.
+
+Additional work included:
+
+* Discord webhook creation and configuration
+* Server-side webhook integration
+* PHP configuration validation
+* Notification delivery testing
+* Mobile notification verification
+* Troubleshooting webhook formatting and authentication issues
+
+Multiple rounds of testing were performed to validate successful communication between the server and Discord.
+
+### Outcome
+
+The server can now successfully deliver notifications to Discord channels, providing near real-time awareness of support activity.
+
+Benefits include:
+
+* Immediate notification delivery
+* Mobile push notifications
+* Improved operational visibility
+* Reduced need for manual dashboard monitoring
+
+This enhancement introduced hands-on experience with webhook integrations, notification systems, application configuration, and operational monitoring.
+
+### Current Limitation
+
+Direct webhook notifications are functioning successfully; however, email-generated tickets are not currently triggering Discord notifications.
+
+Future development will focus on extending notification coverage to additional ticket workflows and automation events.
+
+
 ### Outcome
 
 Improved insight into server status, uptime, resource utilization, and service availability while providing a foundation for future security monitoring and observability initiatives.
