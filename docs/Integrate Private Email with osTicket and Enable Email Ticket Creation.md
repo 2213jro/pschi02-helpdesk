@@ -2,22 +2,22 @@
 
 ## Summary
 
-Integrated Namecheap Private Email with the PS Chi 02 Collaborative Ticketing platform to support email-based ticket creation.
+Integrated a dedicated support mailbox with the PS Chi 02 Collaborative Ticketing platform to support email-based ticket creation and automated ticket intake.
 
 ## Work Completed
 
-### Private Email Deployment
+### Email Service Configuration
 
-* Purchased and configured a Namecheap Private Email mailbox.
-* Created [support@pschi02.com](mailto:support@pschi02.com).
-* Updated MX records and verified DNS propagation.
+* Configured a dedicated support mailbox for the ticketing platform.
+* Established email routing and DNS configuration.
+* Verified successful mail delivery to the support mailbox.
 
 ### osTicket Email Integration
 
 * Added [support@pschi02.com](mailto:support@pschi02.com) as an email account within osTicket.
-* Configured IMAP connectivity using mail.privateemail.com.
+* Configured IMAP connectivity for mailbox access.
 * Verified mailbox authentication and email retrieval.
-* Enabled email fetching through osTicket.
+* Enabled automated email fetching through osTicket.
 
 ### Cron Configuration
 
@@ -25,13 +25,15 @@ Integrated Namecheap Private Email with the PS Chi 02 Collaborative Ticketing pl
 
 Command used:
 
+```bash
 php /var/www/html/api/cron.php
+```
 
 ### Email Processing Validation
 
 * Sent test emails to [support@pschi02.com](mailto:support@pschi02.com).
-* Verified emails were retrieved from the mailbox.
-* Confirmed new tickets were automatically created in osTicket.
+* Verified emails were successfully retrieved from the mailbox.
+* Confirmed new tickets were automatically created within osTicket.
 * Configured processed emails to be archived after successful import.
 
 ### Troubleshooting Performed
@@ -42,7 +44,7 @@ Tests confirmed:
 
 * IMAP (993) connectivity successful.
 * SMTP (465/587) connectivity unsuccessful.
-* SMTP connections to both Namecheap Private Email and Gmail timed out from the Ubuntu server.
+* SMTP connections to multiple mail providers timed out from the Ubuntu server.
 
 Diagnostic tools used:
 
@@ -53,15 +55,15 @@ Diagnostic tools used:
 
 ### Current Status
 
-Working:
+#### Working
 
 * Email ticket creation
 * IMAP mailbox integration
-* Auto-cron processing
+* Automated email processing
 * Email archiving
 * [support@pschi02.com](mailto:support@pschi02.com) mailbox
 
-Pending:
+#### Pending
 
 * Outbound SMTP notifications
 * Account invitation emails
@@ -70,6 +72,6 @@ Pending:
 
 ### Next Steps
 
-A support request has been submitted to DigitalOcean to investigate outbound SMTP connectivity from the Ubuntu droplet.
+A support request has been submitted to investigate outbound SMTP connectivity from the hosting environment.
 
-Once resolved, outbound notifications and account email functions will be enabled and tested.
+Once resolved, outbound notifications, account-related emails, and automated email functions will be enabled and validated.
